@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 	<title>RC-PPT</title>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
@@ -15,11 +13,17 @@
 	<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
 	<style type="text/css">
+			@media print {
+		  .container {
+			width: auto;
+		  }
+		}
 		#left, #right, #up, #down {
 			width: 100px;
 			height:100px;
 			position: absolute;
-			background-color: Light Color;
+			
+
 		}
 		#left{
 			left: 20%;
@@ -43,6 +47,7 @@
 		h2{
 			text-align: center;
 		}
+	body { background-color: #29363d ;}
 	</style>
 </head>
 <body>
@@ -68,23 +73,23 @@
 		<div class="hidden content"><i class="down arrow icon"></i></div>
 	</div> -->
 	<div>
-		<button type="button" class="btn btn-outline-dark" id="left"><i class="ui black button"></i> left</button>
-		<button type="button" class="btn btn-outline-dark" id="right"><i class="right arrow circle icon"></i> right</button>
-		<button type="button" class="btn btn-outline-dark" id="up"><i class="up arrow circle icon"></i> up</button>
-		<button type="button" class="btn btn-outline-dark" id="down"><i class="down arrow circle icon"></i> down</button>
+		<button type="button" class="btn btn-outline-secondary" id="left"><i class="ui black button"></i> left</button>
+		<button type="button" class="btn btn-outline-secondary" id="right"><i class="right arrow circle icon"></i> right</button>
+		<button type="button" class="btn btn-outline-secondary" id="up"><i class="up arrow circle icon"></i> up</button>
+		<button type="button" class="btn btn-outline-secondary" id="down"><i class="down arrow circle icon"></i> down</button>
 	</div>
 	<!-- <button id="clean">clean</button> -->
 	<script type="text/javascript">
 	// 
 		window.onload = function() {
-			//
+			// 
 			var config = {
 				syncDomain: "wd6947576573doyhsc.wilddog.com",
 				syncURL: "https://wd6947576573doyhsc.wilddogio.com"
 			};
 			wilddog.initializeApp(config);
 			var ref = wilddog.sync().ref("reveal");
-			// 1234 上右下左
+			// 
 			var $ = function(dom) {
 				return document.getElementById(dom);
 			}
