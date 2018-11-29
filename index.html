@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	<title>PPT-网络远程控制器</title>
+	<title>RC-PPT</title>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -13,15 +13,18 @@
 	<style type="text/css">
 		#left, #right, #up, #down {
 			width: 100px;
+			height:100px;
 			position: absolute;
+			background-color: darkgray;
 		}
 		#left{
-			left: 10%;
-			top: 20%;
+			left: 30%;
+			top: 30%;
+			
 		}
 		#right{
-			right: 10%;
-			top: 20%;
+			right: 30%;
+			top: 30%;
 		}
 		#up{
 			left: 50%;
@@ -30,7 +33,7 @@
 		}
 		#down{
 			left: 50%;
-			top: 30%;
+			top: 50%;
 			margin-left: -50px;
 		}
 		h2{
@@ -43,7 +46,7 @@
 		<div class="visible content">left</div>
 		<div class="hidden content"><i class="right arrow icon"></i></div>
 	</div> -->
-	<h2 class="ui header">PPT-网络远程控制器</h2>
+	<h2 class="ui header">RC-PPT</h2>
 	<!-- <div class="ui animated button" id="#left">
 		<div class="visible content">left</div>
 		<div class="hidden content"><i class="left arrow icon"></i></div>
