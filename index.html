@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 	<title>RC-PPT</title>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-sync.js"></script>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>  
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->  
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
 	<style type="text/css">
 		#left, #right, #up, #down {
-			width: 80px;
-			height:80px;
+			width: 100px;
+			height:100px;
 			position: absolute;
-			background-color: darkgray;
+			background-color: Light Color;
 		}
-				#left{
-			left: 35%;
+		#left{
+			left: 20%;
 			top: 30%;
 			
 		}
 		#right{
-			right: 35%;
+			right: 20%;
 			top: 30%;
 		}
 		#up{
 			left: 50%;
-			top: 15%;
+			top: 16%;
 			margin-left: -50px;
 		}
 		#down{
 			left: 50%;
-			top: 45%;
+			top: 44%;
 			margin-left: -50px;
 		}
 		h2{
@@ -64,19 +68,16 @@
 		<div class="hidden content"><i class="down arrow icon"></i></div>
 	</div> -->
 	<div>
-		<button class="ui left labeled icon button secondary" id="left"><i class="left arrow circle icon"></i> left</button>
-		<button class="ui left labeled icon button secondary" id="right"><i class="right arrow circle icon"></i> right</button>
-		<button class="ui left labeled icon button secondary" id="up"><i class="up arrow circle icon"></i> up</button>
-		<button class="ui left labeled icon button secondary" id="down"><i class="down arrow circle icon"></i> down</button>
+		<button type="button" class="btn btn-outline-dark" id="left"><i class="ui black button"></i> left</button>
+		<button type="button" class="btn btn-outline-dark" id="right"><i class="right arrow circle icon"></i> right</button>
+		<button type="button" class="btn btn-outline-dark" id="up"><i class="up arrow circle icon"></i> up</button>
+		<button type="button" class="btn btn-outline-dark" id="down"><i class="down arrow circle icon"></i> down</button>
 	</div>
 	<!-- <button id="clean">clean</button> -->
-	
-	
-	
 	<script type="text/javascript">
 	// 
 		window.onload = function() {
-			// 
+			//
 			var config = {
 				syncDomain: "wd6947576573doyhsc.wilddog.com",
 				syncURL: "https://wd6947576573doyhsc.wilddogio.com"
